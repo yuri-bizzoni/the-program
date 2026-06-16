@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use The Program in your research, please cite it as below."
+title: "The Program: a multi-agent companionship sandbox for affect, social dynamics, and emotional regulation"
+abstract: >-
+  The Program is a lightweight, dependency-free Python sandbox in which multiple
+  agents converse, each carrying a dimensional emotional state that they regulate
+  toward a temperamental baseline and that is perturbed by appraisal and emotional
+  contagion. A companionship layer adds episodic memory, accumulated bonds,
+  co-regulation of a distressed partner, and a conflict/repair (rupture-and-repair)
+  cycle.
+type: software
+authors:
+  - family-names: Bizzoni
+    given-names: Yuri
+    email: yuri.bizzoni@gmail.com
+version: 0.1.0
+date-released: "2026-06-16"
+license: MIT
+repository-code: "https://github.com/yuri-bizzoni/the-program"
+keywords:
+  - multi-agent systems
+  - affective computing
+  - emotion regulation
+  - companionship
+  - social simulation

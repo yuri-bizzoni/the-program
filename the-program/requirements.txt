@@ -1,0 +1,9 @@
+# The core simulation needs nothing beyond the Python standard library.
+#
+# Dependencies are declared in pyproject.toml. Prefer installing via:
+#   python -m pip install -e .          # core
+#   python -m pip install -e ".[llm]"   # + Claude dialogue backend & appraiser
+#   python -m pip install -e ".[dev]"   # + pytest
+#
+# This file is kept for convenience only:
+anthropic>=0.69   # optional — required only for the --llm backend/appraiser

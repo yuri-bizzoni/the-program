@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-program"
+version = "0.1.0"
+description = "A lightweight multi-agent companionship sandbox: affect, social dynamics, and emotional regulation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Yuri Bizzoni", email = "yuri.bizzoni@gmail.com" }]
+keywords = [
+    "multi-agent",
+    "affective-computing",
+    "emotion",
+    "companionship",
+    "social-simulation",
+    "agent-based-model",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Sociology",
+]
+dependencies = []  # the core simulation is pure standard library
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.69"]   # optional Claude dialogue backend + affect appraiser
+dev = ["pytest>=7"]
+
+[project.scripts]
+the-program = "the_program.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yuri-bizzoni/the-program"
+Repository = "https://github.com/yuri-bizzoni/the-program"
+Issues = "https://github.com/yuri-bizzoni/the-program/issues"
+
+[tool.setuptools]
+packages = ["the_program"]
